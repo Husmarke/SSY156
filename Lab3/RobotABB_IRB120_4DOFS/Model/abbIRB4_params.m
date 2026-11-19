@@ -1,0 +1,21 @@
+function p=abbIRB4_params
+
+% Use the result from Lab. Assignment 1
+L1=0.29;
+L2=0.27;
+L3=0.07;
+L4=0.302;
+L5=0.072;
+L6=0.1; % EF offset
+L7=sqrt(L3^2+L4^2);% linear offset between cf 2 and cf 3
+L8=L5+L6;% linear offset between cf 3 and cf 4 (in this case,  consider cf_4=ef) (See Figure 1 in Lab Assignment document)
+al=atan(L4/L3);% angular offset between cf 2 and cf 3
+% Parameters
+% original
+% p=[L1,L2,L7,L8,al];
+% modified
+p=[L1,L2,L3,L4,L6,L7,L8,al];
+
+end
+
+
